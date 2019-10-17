@@ -1,0 +1,16 @@
+s=input()
+
+if(s[8:]=="pm" or s[8:]=="PM"):
+    if(int(s[0:2])==12):
+        s1=12
+    else:
+        s1=int(s[0:2])+12
+    p=str(s1)+s[2:8]
+    print(p)
+else:
+    if(int(s[0:2])==12):
+        s1="00"
+    else:
+        s1=s[0:2]
+    p=s1+s[2:8]
+    print(p)
