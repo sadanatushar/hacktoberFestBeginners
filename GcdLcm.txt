@@ -1,0 +1,19 @@
+t=int(input())
+
+for z in range(t):
+
+    (a,b)=map(int,input().split(' '))
+
+    b1=b
+
+    a1=a
+
+    while(b):
+
+        a,b=b,a%b
+
+    gcd=a;
+
+    lcm=(a1*b1)//gcd
+
+    print(gcd,lcm)
